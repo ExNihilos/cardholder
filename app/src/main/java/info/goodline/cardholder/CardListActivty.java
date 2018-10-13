@@ -13,14 +13,27 @@ public class CardListActivty extends AppCompatActivity {
         setContentView(R.layout.activity_card_list_activty);
     }
 
-    public void onClick(View view) {
-        Card cards = new Card();
-        cards.setCard_name("Лента");
-        cards.setId("1");
-        cards.setPhoto("https://goo.gl/eQRqVq");
+    public void onClick_1(View view) {
+
+        Card card = new Card();
+        card.setCard_name("Карта Лента");
+        card.setId("ID:1");
+        card.setPhoto("Фото: https://goo.gl/eQRqVq");
 
         Intent intent = new Intent(this, EditCardActivty.class);
-        intent.putExtra(Card.class.getSimpleName(), cards);
+        intent.putExtra(Card.class.getSimpleName(), card);
         startActivity(intent);
+    }
+
+    public void onClick_2(View view) {
+
+        Card card = new Card();
+        card.setCard_name("Карта Доминго");
+        card.setId("ID:2");
+        card.setPhoto("Фото: https://goo.gl/65NeMq ");
+
+        Intent intent_2 = new Intent(this, EditCardActivty.class);
+        intent_2.putExtra(Card.class.getSimpleName(), card);
+        startActivity(intent_2);
     }
 }

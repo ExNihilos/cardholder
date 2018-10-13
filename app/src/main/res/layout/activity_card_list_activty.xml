@@ -6,26 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".CardListActivty">
 
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="155dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="283dp"
+        android:onClick="onClick_2"
+        android:text="Посмотреть"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/button_1" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="127dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="60dp"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
         android:text="Карта 1"
-        app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_1"
         android:layout_width="155dp"
         android:layout_height="51dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        android:onClick="onClick"
+        android:onClick="onClick_1"
         android:text="Посмотреть"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="129dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="300dp"
+        android:text="Карта 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.58" />
+
 </android.support.constraint.ConstraintLayout>
