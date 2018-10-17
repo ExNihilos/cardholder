@@ -16,7 +16,7 @@ public class CardListActivty extends AppCompatActivity {
     public void onClick_1(View view) {
 
         Card card = new Card();
-        card.setCard_name("Карта Лента");
+        card.setName("Карта Лента");
         card.setId("ID:1");
         card.setPhoto("Фото: https://goo.gl/eQRqVq");
 
@@ -28,7 +28,7 @@ public class CardListActivty extends AppCompatActivity {
     public void onClick_2(View view) {
 
         Card card = new Card();
-        card.setCard_name("Карта Доминго");
+        card.setName("Карта Доминго");
         card.setId("ID:2");
         card.setPhoto("Фото: https://goo.gl/65NeMq ");
 
