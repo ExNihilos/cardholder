@@ -27,16 +27,11 @@ public class EditCardActivity extends AppCompatActivity {
             return;
         }
 
-        //String id = argument.getString("ID: ");
-        //String title = argument.getString("Название карты: ");
-        //String photo = argument.getString("Фото: ");
         String id = "ID: " + card.getId();
         String title = "Название карты: " + card.getTitle();
         String photo = "Фото: " + card.getPhoto();
 
-        //tvID.setText(card.getId());
-        //tvTitle.setText(card.getTitle());
-        //tvPhoto.setText(card.getPhoto());
+
         tvID.setText(id);
         tvTitle.setText(title);
         tvPhoto.setText(photo);
