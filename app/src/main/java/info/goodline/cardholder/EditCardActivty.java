@@ -22,11 +22,11 @@ public class EditCardActivty extends AppCompatActivity {
 
         Card cards = (Card) arg.getSerializable(Card.class.getSimpleName());
 
-        String card_name = cards.getCard_name();
+        String name = cards.getName();
         String photo = cards.getPhoto();
         String id = cards.getId();
 
-        tvCardName.setText(card_name);
+        tvCardName.setText(name);
         tvPhoto.setText(photo);
         tvID.setText(id);
     }

@@ -3,16 +3,16 @@ package info.goodline.cardholder;
 import java.io.Serializable;
 
 public class Card implements Serializable {
-    private String card_name;
+    private String name;
     private String photo;
     private String id;
 
-    public String getCard_name() {
-        return card_name;
+    public String getName() {
+        return name;
     }
 
-    public void setCard_name(String card_name) {
-        this.card_name = card_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPhoto() {

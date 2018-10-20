@@ -7,33 +7,34 @@ import android.view.View;
 
 public class CardListActivty extends AppCompatActivity {
 
+    private Card cardOne;
+    private Card cardTow;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_list_activty);
+
+        cardOne = new Card();
+        cardOne.setName("Карта Лента");
+        cardOne.setId("ID:1");
+        cardOne.setPhoto("Фото: https://goo.gl/eQRqVq");
+
+        cardTow = new Card();
+        cardTow.setName("Карта Доминго");
+        cardTow.setId("ID:2");
+        cardTow.setPhoto("Фото: https://goo.gl/65NeMq ");
     }
 
     public void onClick_1(View view) {
-
-        Card card = new Card();
-        card.setName("Карта Лента");
-        card.setId("ID:1");
-        card.setPhoto("Фото: https://goo.gl/eQRqVq");
-
         Intent intent = new Intent(this, EditCardActivty.class);
-        intent.putExtra(Card.class.getSimpleName(), card);
+        intent.putExtra(Card.class.getSimpleName(), cardOne);
         startActivity(intent);
     }
 
     public void onClick_2(View view) {
-
-        Card card = new Card();
-        card.setName("Карта Доминго");
-        card.setId("ID:2");
-        card.setPhoto("Фото: https://goo.gl/65NeMq ");
-
         Intent intent_2 = new Intent(this, EditCardActivty.class);
-        intent_2.putExtra(Card.class.getSimpleName(), card);
+        intent_2.putExtra(Card.class.getSimpleName(), cardTow);
         startActivity(intent_2);
     }
 }
